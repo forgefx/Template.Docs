@@ -1,36 +1,61 @@
-# Template.Docs
 
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
+# **Template.Docs**
 
-This project is a fork of the quartz project where some of the default configuration has been altered to make rolling out docs projects easier for ForgeFX.
+> **“One who works with the door open gets all kinds of interruptions, but they also occasionally get clues as to what the world is and what might be important.”**  
+> — Richard Hamming
 
-After installing the template quartz commands should still be ran.
+This project is a fork of the **Quartz** project, with adjustments to the default configuration to streamline the rollout of documentation projects for **ForgeFX**.
 
-Open the git terminal and run:
+---
 
-```
+## **Setup Instructions**
+
+To get started, follow these steps:
+
+1. **Install Dependencies**:
+   Open your terminal and run the following commands:
+```bash
 npm i
 npx quartz create
 ```
 
-If you get errors on `npm i` or `npx quartz create` you might be missing some package installs on your computer. Install the packages until the errors are resolved, sending screenshots to ChatGPT is a simply and effective way to resolve the issues. 
+If you encounter errors during the install or setup steps, it may indicate missing packages on your system. Install the necessary packages and continue. 
 
-If you want to test a local build run:
-```
+> **Pro Tip**: Sending screenshots of errors to ChatGPT is an easy and efficient way to troubleshoot issues.
+
+2. **Local Development**:
+To test the build locally, use the following command:
+
+```bash
 npx quartz build --serve
-```
+````
 
-Hosting should already be setup as I've added the `quartz/.github/workflows/deploy.yml` to the github workspace already, pages just need to be enabled in the project settings and set to use github actions for deployment.
-```
-Head to “Settings” tab of your forked repository and in the sidebar, click “Pages”. Under “Source”, select “GitHub Actions”.
-```
+---
 
-To customize the page general metadata you can edit the file `quartz.config.ts` in the project root, documentation for the config file can be found here: https://quartz.jzhao.xyz/configuration
+## **Deployment Instructions**
 
-To author content for the website the simplest method is to download https://obsidian.md/ and open the "content" folder of this project as a vault. You can also edit the markdown directly or use a different editor like Cursor IDE if you like. 
+The deployment process is already set up for you. The `deploy.yml` workflow file has been added to the `.github/workflows/` directory of the project. To finalize the deployment:
 
-# Deployment
-The website will automatically update with every commit made to the repo might just take a few minutes to update, you can track it's progress from the deployment tab on the github repo home page. 
+1. Navigate to the **Settings** tab of your forked repository.
+2. In the sidebar, click **Pages**.
+3. Under **Source**, select **GitHub Actions** for deployment.
 
+Once enabled, your website will automatically update with each commit to the repository. Please note, updates may take a few minutes to appear. You can track the progress from the **Deployments** tab on the repository’s home page.
 
-Quartz 4 Documentation: https://quartz.jzhao.xyz/
+---
+
+## **Customization**
+
+To customize the page's metadata, you can modify the `quartz.config.ts` file located in the project root. Detailed documentation for configuring Quartz can be found [here](https://quartz.jzhao.xyz/configuration).
+
+### **Authoring Content**
+
+The easiest way to create and manage content is to use [Obsidian](https://obsidian.md/). Simply open the **content** folder of this project as a vault in Obsidian. Alternatively, you can directly edit the markdown files or use another editor like **Cursor IDE**.
+
+---
+
+## **Additional Resources**
+
+- **Quartz 4 Documentation**: [https://quartz.jzhao.xyz/](https://quartz.jzhao.xyz/)
+
+---
